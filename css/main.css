@@ -662,7 +662,7 @@ blockquote {
 }
 
 .section-inner.start-page-full-width .inner-content .fill-block {
-  background-image: url(../images/sp_photo.jpg);
+  background-image: url(../images/sp_photo.png);
 }
 .section-inner.start-page-full-width .inner-content .fill-block {
   position: relative;
@@ -3286,7 +3286,7 @@ blockquote p {
 
 .start-page .section-inner {
   background-color: transparent;
-  background-image: url(../images/background.png);
+  background-image: url(../images/background_small.png);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-attachment: fixed;
