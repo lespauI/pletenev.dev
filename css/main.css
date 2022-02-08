@@ -1288,6 +1288,10 @@ blockquote {
   font-size: .92em;
 }
 
+#download_btn {
+    margin: -12px;
+}
+
 
 /* Skills */
 .skills-info.skills-second-style h4 {
