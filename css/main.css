@@ -513,7 +513,13 @@ body > footer .copyrights {
 
 .bs-50 {
   padding-bottom: 50px;
+
 }
+
+[style = "hidden"] {
+visibility: hidden;
+}
+
 /* /Bottom Spaces */
 
 blockquote {
