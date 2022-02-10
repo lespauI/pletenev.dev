@@ -1292,6 +1292,11 @@ blockquote {
     margin: -12px;
 }
 
+#download_btn_mobile {
+
+}
+
+
 
 /* Skills */
 .skills-info.skills-second-style h4 {
@@ -2833,13 +2838,13 @@ blockquote p {
   .mobile-header {
     position: fixed;
     display: inline-block;
-    width: 100%;
+    width: 120%;
     max-width: 100%;
     background-color: #222;
     border-bottom: 1px solid #444;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 55px;
     z-index: 1002;
   }
 
