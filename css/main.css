@@ -1289,6 +1289,7 @@ blockquote {
 }
 
 #download_btn {
+width: 50%;
     margin: -12px;
 }
 
