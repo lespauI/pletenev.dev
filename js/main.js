@@ -12,20 +12,22 @@
         var portfolio_grid = $('.portfolio-grid'),
             portfolio_filter = $('.portfolio-filters');
             
-        if (portfolio_grid) {
+        if (portfolio_grid.length) {
 
             portfolio_grid.shuffle({
                 speed: 450,
                 itemSelector: 'figure'
             });
 
-            portfolio_filter.on("click", ".filter", function (e) {
-                portfolio_grid.shuffle('update');
-                e.preventDefault();
-                $('.portfolio-filters .filter').parent().removeClass('active');
-                $(this).parent().addClass('active');
-                portfolio_grid.shuffle('shuffle', $(this).attr('data-group') );
-            });
+            if (portfolio_filter.length) {
+                portfolio_filter.on("click", ".filter", function (e) {
+                    portfolio_grid.shuffle('update');
+                    e.preventDefault();
+                    $('.portfolio-filters .filter').parent().removeClass('active');
+                    $(this).parent().addClass('active');
+                    portfolio_grid.shuffle('shuffle', $(this).attr('data-group') );
+                });
+            }
 
         }
     }
@@ -34,16 +36,20 @@
     // Contact form validator
     $(function () {
 
-        $('#contact_form').validator();
+        var contactForm = $('#contact_form');
+        if (!contactForm.length) {
+            return;
+        }
 
-        $('#contact_form').on('submit', function (e) {
+        contactForm.validator();
+        contactForm.on('submit', function (e) {
             if (!e.isDefaultPrevented()) {
                 var url = "contact_form/contact_form.php";
 
                 $.ajax({
                     type: "POST",
                     url: url,
-                    data: $(this).serialize(),
+                    data: contactForm.serialize(),
                     success: function (data)
                     {
                         var messageAlert = 'alert-' + data.type;
@@ -51,8 +57,8 @@
 
                         var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
                         if (messageAlert && messageText) {
-                            $('#contact_form').find('.messages').html(alertBox);
-                            $('#contact_form')[0].reset();
+                            contactForm.find('.messages').html(alertBox);
+                            contactForm[0].reset();
                         }
                     }
                 });
@@ -61,6 +67,42 @@
         });
     });
     // /Contact form validator
+
+    // Contact reveal (email/phone)
+    $(function () {
+        var revealSelector = '.reveal-contact';
+
+        $(document).on('click', revealSelector, function (event) {
+            var link = $(this);
+            if (link.hasClass('revealed')) {
+                return;
+            }
+
+            event.preventDefault();
+            var value = link.data('value');
+            var href = link.data('href');
+
+            if (value) {
+                link.text(value);
+            }
+
+            if (href) {
+                link.attr('href', href);
+            }
+
+            link.addClass('revealed');
+        });
+
+        $(document).on('keydown', revealSelector, function (event) {
+            if (event.key !== ' ' && event.key !== 'Spacebar') {
+                return;
+            }
+
+            event.preventDefault();
+            $(this).trigger('click');
+        });
+    });
+    // /Contact reveal (email/phone)
 
     // Hide Mobile menu
     function mobileMenuHide() {
@@ -97,8 +139,8 @@
             }, 500);
         }
 
-        var href = $('.ajax-page-load').each(function(){
-            href = $(this).attr('href');
+        $('.ajax-page-load').each(function(){
+            var href = $(this).attr('href');
             if(location.hash == location.hash.split('/')[0] + '/' + href.substr(0,href.length-5)){
                 var toLoad =  $(this).attr('href');
                 showContent();
@@ -145,7 +187,7 @@
 
 
     // On Document Load
-    $(document).on('ready', function() {
+    $(function() {
         // Page Scroll to id fn call //
         var offset = 0;
         if ($(window).width() < 992) {
@@ -332,15 +374,6 @@
                     $(this).parent('.form-group').removeClass('form-group-focus');
                 }
             });
-
-        //Google Maps
-        $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
-        });
-        $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
-        });
-
 
         $('.lmpixels-scroll-to-top').click(function () {
             $('body,html').animate({

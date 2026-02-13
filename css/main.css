@@ -54,6 +54,11 @@ html {
   width: 100%;
 }
 
+:root {
+  --content-max-width: 1140px;
+  --content-side-padding: 15px;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -115,6 +120,18 @@ a:hover {
 
 a:focus {
   outline: 0;
+}
+
+.reveal-contact {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.reveal-contact:focus {
+  outline: 2px solid #FF9800;
+  outline-offset: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -516,8 +533,8 @@ body > footer .copyrights {
 
 }
 
-[style = "hidden"] {
-visibility: hidden;
+[hidden] {
+  display: none !important;
 }
 
 /* /Bottom Spaces */
@@ -619,7 +636,8 @@ blockquote {
   min-width: 100%;
   min-height: 100%;
   max-width: 2300px;
-  padding-left: 15px;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0 auto;
   top: 0;
   left: 0;
@@ -643,7 +661,7 @@ blockquote {
   min-width: 100%;
   min-height: 100%;
   background-color: transparent;
-  padding: 50px 70px 70px;
+  padding: 50px 0 70px;
   background-color: #222;
   -ms-transform: none;
 }
@@ -986,7 +1004,21 @@ blockquote {
 
 /* custom-pages */
 .section-title-block.first-style, .section-title-block.second-style {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.section-content .bs-30 {
+  padding-bottom: 20px;
+}
+
+.section-content-wrap {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--content-side-padding);
+  padding-right: var(--content-side-padding);
+  box-sizing: border-box;
 }
 
 .section-title-block.first-style .section-title, .page-title-wrap.first-style h2.page-title, .section-title-block.second-style .section-title, .page-title-wrap.second-style h2.page-title {
@@ -1289,8 +1321,29 @@ blockquote {
 }
 
 #download_btn {
-width: 50%;
-    margin: -12px;
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#download_btn .col-inner {
+  padding-top: 0;
+}
+
+#download_btn .col-xs-12,
+#download_btn .col-sm-12 {
+  padding: 0;
+  float: none;
+  width: 100%;
+}
+
+#download_btn .btn {
+  display: block;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 #download_btn_mobile {
@@ -1369,6 +1422,9 @@ width: 50%;
 }
 .skill-percentage.skill-70 {
   width: 70%;
+}
+.skill-percentage.skill-65 {
+  width: 65%;
 }
 .skill-percentage.skill-60 {
   width: 60%;
@@ -2895,7 +2951,7 @@ blockquote p {
   }
 
   .pt-page .section-inner {
-    padding: 25px 30px 60px;
+    padding: 25px 0 60px;
     margin-left: 0;
   }
 
@@ -3294,7 +3350,7 @@ blockquote p {
   display: table;
   table-layout: fixed;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 0;
   overflow: hidden;
 }
 

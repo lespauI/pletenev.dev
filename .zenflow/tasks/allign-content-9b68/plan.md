@@ -19,7 +19,7 @@ Do not make assumptions on important decisions — get clarification first.
 ## Workflow Steps
 
 ### [x] Step: Technical Specification
-<!-- chat-id: 3a3b3917-7457-4730-abe3-31ad2e73de45 -->
+<!-- chat-id: 5fa4f008-8349-4276-b20f-1787fbc673c8 -->
 
 Assess the task's difficulty, as underestimating it leads to poor outcomes.
 - easy: Straightforward implementation, trivial bug fix or feature
@@ -53,33 +53,23 @@ Save to `{@artifacts_path}/plan.md`. If the feature is trivial and doesn't warra
 
 ---
 
-### [x] Step: Content inventory + agent.md
-<!-- chat-id: c6e35f76-57fa-4554-a795-6dbd61d9a2dc -->
-- Extract latest data from `Profile.pdf` and `files/CV-Konstantin_Pletenev.pdf`.
-- Create `agent.md` documenting section-by-section copy and sources.
-- Resolve open questions with the user (blog/testimonials visibility, contact details, etc.).
+### [x] Step: Implementation
+<!-- chat-id: c4a8bbc2-b0a0-4a2e-a4ad-fd0acd0d14ae -->
 
-### [x] Step: Update site content (keep current visual style)
-<!-- chat-id: 6c75df56-a51c-444f-91d2-24362288c4a8 -->
-- Update `index.html` and auxiliary pages with latest roles, summary, skills, and contact info.
-- Replace or hide placeholder content (blog posts, testimonials, clients) based on user input.
-- Manual check in browser for layout regressions.
+Implement the task according to the technical specification and general engineering best practices.
 
-### [x] Step: Refactor + library refresh
-<!-- chat-id: c9bf9e4b-f74a-4f22-8e72-7ba5fed8b82c -->
-- Clean up invalid HTML and unused scripts; add safe external link attributes.
-- Update vendor JS/CSS libraries to compatible versions and adjust `js/main.js` as needed.
-- Manual check in browser + console for JS errors.
+1. Break the task into steps where possible.
+2. Implement the required changes in the codebase
+3. If relevant, write unit tests alongside each change.
+4. Run relevant tests and linters in the end of each step.
+5. Perform basic manual verification if applicable.
+6. After completion, write a report to `{@artifacts_path}/report.md` describing:
+   - What was implemented
+   - How the solution was tested
+   - The biggest issues or challenges encountered
 
-### [x] Step: Verification + report
-<!-- chat-id: 081dd19e-ee11-4f9a-98bc-0d4392e778e1 -->
-- Run Playwright smoke checks/screenshots if available.
-- Write `{@artifacts_path}/report.md` with changes and testing notes.
+### [x] Step: Update codding skills
+<!-- chat-id: f522cc10-5d2a-4459-8eee-577be17e0f35 -->
 
-### [x] Step: Remove blogs section
-<!-- chat-id: 7f825968-77d3-4000-b133-52c42efd1c80 -->
-
-### [x] Step: use playwright mcp
-<!-- chat-id: 30c638d7-dadc-4b8f-8091-430818d44d80 -->
-
-to allign site conten
+Coding Skills Py - 80, add typescript - 80, 
+Add LLM section and expirience with Claude, Codex, OLLAMA, Google stack, set 70 claude 60 codex and 50 on olama and google
