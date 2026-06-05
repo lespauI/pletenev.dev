@@ -1,0 +1,35 @@
+# Konstantin Pletenev
+
+> QA leader and Test Automation Architect with 14+ years building quality engineering functions from scratch across AI tooling, AR/fashion, fitness tech, and banking. Currently QA Team Lead at Zencoder, based in Porto, Portugal. ISTQB Certified Tester Advanced Level — Test Automation Engineering (ID: 19-CTAL-TAE-162484-06).
+
+## About
+
+- **Name**: Konstantin Pletenev
+- **Professional identity**: Head of QA / QA Lead / Test Automation Lead
+- **Current role**: QA Team Lead at Zencoder (May 2025 – present)
+- **Location**: Porto, Portugal
+- **Languages**: English (fluent), Russian (fluent), Portuguese (basic), Latvian (basic)
+- **Focus areas**: QA strategy and leadership, test automation architecture, mobile/web/backend quality, AI-driven QA, LLM agents for test case generation and requirement analysis
+
+## Experience
+
+- **Zencoder** — QA Team Lead — May 2025 – present — Porto, Portugal
+- **Zing Coach** — Head of Quality Assurance — Jun 2024 – May 2025 — Porto, Portugal
+- **WANNA (Farfetch Group)** — Head of QA — Mar 2022 – Jun 2024 — Porto, Portugal
+- **Accenture Latvia** — Test Automation Lead / Architect — Jun 2015 – Feb 2022 — Latvia
+- **Adicom Systems** — QA Engineer — Oct 2012 – May 2015 — Russia
+- **DEEP 2000** — QA Engineer — Nov 2011 – Sep 2012 — Russia
+
+## Education and certification
+
+- Master's in Computer Science, Russian State Technological University (2011–2013)
+- Bachelor's in Computer Science, Russian State Technological University (2007–2011)
+- ISTQB Certified Tester Advanced Level — Test Automation Engineering (2019), ID: 19-CTAL-TAE-162484-06
+
+## Links
+
+- **Website**: https://pletenev.dev/
+- **LinkedIn**: https://www.linkedin.com/in/konstantin-pletenev-b463455a/
+- **GitHub**: https://github.com/lespauI
+- **Email**: konstantin@pletenev.dev
+- **CV (PDF)**: https://pletenev.dev/files/CV-Konstantin_Pletenev.pdf
