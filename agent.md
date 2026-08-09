@@ -120,7 +120,7 @@
 - Needs confirmation: remove blog section, keep but hide, or replace with real posts
 
 ### Social links
-- LinkedIn: https://www.linkedin.com/in/konstantin-pletenev-b463455a/
+- LinkedIn: https://www.linkedin.com/in/konstantin-pletenev/
 - GitHub: https://github.com/lespauI/
 - Twitter + Facebook currently present in site
 - Needs confirmation: keep or remove Twitter/Facebook

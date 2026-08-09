@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Konstantin Pletenev — CV — Head of QA, Test Automation Architect</title>
-<meta name="description" content="CV of Konstantin Pletenev — QA Team Lead at Zencoder. 14+ years of QA leadership, test automation, and AI/LLM QA. Porto, Portugal.">
+<title>Konstantin Pletenev, CV, Head of QA, Test Automation Architect</title>
+<meta name="description" content="CV of Konstantin Pletenev, Head of QA at Zencoder. 14+ years of QA leadership, test automation, and AI/LLM QA. Porto, Portugal.">
 <meta name="author" content="Konstantin Pletenev">
 <link rel="canonical" href="https://pletenev.dev/files/cv.html">
 <style>
@@ -19,31 +19,25 @@
     color: #222;
   }
 
-  /* --- HEADER --- */
+  /* --- SECTION TITLES (shared) --- */
+  h2 {
+    font-size: 16pt;
+    text-align: center;
+    margin-bottom: 10pt;
+    margin-top: 14pt;
+    page-break-after: avoid;
+  }
+
+  /* --- HEADER (single column) --- */
   .header {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     margin-bottom: 14pt;
   }
-  .header-left { flex: 1; padding-right: 20pt; }
-  .header-right {
-    width: 160pt;
-    text-align: right;
-    font-size: 9.5pt;
-    color: #444;
-  }
-  .header-right img {
-    width: 120pt;
-    height: 120pt;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 50%;
-    margin-bottom: 8pt;
-  }
   h1 { font-size: 22pt; font-weight: 700; margin-bottom: 2pt; }
-  .subtitle { font-size: 12pt; color: #555; margin-bottom: 10pt; }
-  .header-right a { color: #1a6fb5; text-decoration: none; }
-  .header-right p { margin-bottom: 2pt; }
+  .subtitle { font-size: 12pt; color: #555; margin-bottom: 8pt; }
+  .contact-line { font-size: 9.5pt; color: #444; margin-bottom: 4pt; }
+  .contact-line a { color: #1a6fb5; text-decoration: none; }
+  .availability-line { font-weight: 700; color: #1a6fb5; font-size: 9.5pt; }
 
   /* --- SECTION LABELS --- */
   .label { font-weight: 700; font-size: 10pt; margin-top: 8pt; margin-bottom: 2pt; }
@@ -54,24 +48,16 @@
   /* --- EDUCATION LIST --- */
   .edu-list { list-style: disc; padding-left: 16pt; font-size: 9.5pt; }
 
+  /* --- LEADERSHIP / COMPETENCIES --- */
+  .leadership-list { list-style: disc; padding-left: 16pt; font-size: 9.5pt; }
+  .competencies { margin-bottom: 12pt; }
+
   /* --- SUMMARY --- */
   .summary { margin-bottom: 12pt; }
-  .summary h2 {
-    font-size: 16pt;
-    text-align: center;
-    margin-bottom: 8pt;
-    page-break-after: avoid;
-  }
   .summary p { margin-bottom: 5pt; }
 
   /* --- EXPERIENCE --- */
-  .experience h2 {
-    font-size: 16pt;
-    text-align: center;
-    margin-bottom: 12pt;
-    page-break-after: avoid;
-  }
-  .job { margin-bottom: 14pt; }
+  .job { margin-bottom: 14pt; break-inside: avoid; page-break-inside: avoid; }
   .job h3 { font-size: 13pt; font-weight: 700; margin-bottom: 1pt; }
   .job .dates { font-size: 9.5pt; color: #555; margin-bottom: 3pt; }
   .job .position { font-weight: 700; margin-bottom: 4pt; }
@@ -80,14 +66,24 @@
   .job li { margin-bottom: 2pt; }
   .job .sub-heading { font-weight: 700; margin-top: 6pt; margin-bottom: 3pt; }
   .job .tech { font-size: 9.5pt; color: #444; margin-top: 4pt; }
+  .job .notable-inline { font-size: 9.5pt; color: #333; font-style: italic; margin-bottom: 4pt; }
 
   .notable-project { margin-bottom: 5pt; }
   .notable-project strong { display: block; }
 
+  /* --- SKILLS SECTION --- */
+  .skills { margin-bottom: 12pt; }
+  .skill-cat { font-size: 9.5pt; color: #444; margin-bottom: 3pt; }
+  .skill-label { font-weight: 700; color: #222; }
+
+  /* --- FOOTER INFO (education / cert / languages) --- */
+  .footer-info { margin-bottom: 6pt; }
+  .footer-info .label { margin-top: 10pt; }
+
   /* --- EARLY CAREER --- */
-  .early-career { margin-top: 10pt; }
-  .early-career h3 { font-size: 12pt; margin-bottom: 6pt; }
-  .early-role { margin-bottom: 6pt; }
+  .early-career { margin-top: 10pt; break-inside: avoid; page-break-inside: avoid; }
+  .early-career h3 { font-size: 12pt; margin-bottom: 6pt; text-align: left; }
+  .early-role { margin-bottom: 6pt; break-inside: avoid; page-break-inside: avoid; }
   .early-role .role-title { font-weight: 700; }
   .early-role .dates { font-size: 9.5pt; color: #555; }
 </style>
@@ -96,44 +92,29 @@
 
 <!-- ==================== HEADER ==================== -->
 <div class="header">
-  <div class="header-left">
-    <h1>Konstantin Pletenev</h1>
-    <div class="subtitle">Head of QA / QA Lead / Test Automation Lead</div>
-
-    <div class="label">Tech stack</div>
-    <div class="tech-inline">TypeScript, Python, Java, Playwright, Appium, Selenium, Cucumber/BDD, AWS, CI/CD, Jenkins, GitHub Actions, Jira, Git, Allure</div>
-
-    <div class="label">Education</div>
-    <ul class="edu-list">
-      <li>Russian State Technological University &ndash; BSc Computer Science (2007&ndash;2011)</li>
-      <li>Russian State Technological University &ndash; MSc Computer Science (2011&ndash;2013)</li>
-    </ul>
-
-    <div class="label">Certification</div>
-    <div class="tech-inline">ISTQB&reg; Certified Tester Advanced Level &ndash; Test Automation Engineering (19-CTAL-TAE-162484-06)</div>
-
-    <div class="label">Languages</div>
-    <div class="tech-inline">English &ndash; fluent, Russian &ndash; fluent, Portuguese &ndash; basic, Latvian &ndash; basic</div>
-
-    <div class="label">References</div>
-    <div class="tech-inline">Available upon request.</div>
+  <h1>Konstantin Pletenev</h1>
+  <div class="subtitle">Head of QA / QA Lead / Test Automation Lead</div>
+  <div class="contact-line">
+    Porto, Portugal &middot; +351 910897088 &middot; <a href="mailto:konstantin@pletenev.dev">konstantin@pletenev.dev</a> &middot; <a href="https://www.linkedin.com/in/konstantin-pletenev/">linkedin.com/in/konstantin-pletenev</a> &middot; <a href="https://github.com/lespaul/">github.com/lespaul</a>
   </div>
-  <div class="header-right">
-    <img src="../images/photo_cv.jpg" alt="Konstantin Pletenev">
-    <p>Porto, Portugal</p>
-    <p>Phone: +351 910897088</p>
-    <p>Email: <a href="mailto:konstantin@pletenev.dev">konstantin@pletenev.dev</a></p>
-    <p>Date of Birth: 04.12.1989</p>
-    <p>Marital Status: married</p>
-    <p><a href="https://www.linkedin.com/in/konstantin-pletenev-b463455a/" style="text-decoration: underline;">linkedin.com/in/konstantin-pletenev</a></p>
-    <p><a href="https://github.com/lespauI/" style="text-decoration: underline;">github.com/lespauI</a></p>
-  </div>
+  <div class="availability-line">EU work authorisation &middot; Open to remote / hybrid</div>
 </div>
 
 <!-- ==================== SUMMARY ==================== -->
 <div class="summary">
   <h2>Professional summary</h2>
-  <p>QA leader with 14+ years building quality engineering functions from scratch across AI tooling, AR/fashion, fitness tech, and banking. Moves fast without breaking things: shipped daily releases, 4x release cadence, and 80% customer satisfaction gains by turning QA from a gatekeeper into a product accelerator. Leads teams, writes automation, owns production incidents, and isn't afraid to throw out the old playbook when the problem demands it. Currently hands-on with AI-assisted testing, using agents, MCP servers, and BDD frameworks to make quality scale as the team grows. ISTQB CTAL-TAE certified.</p>
+  <p>QA leader with 14+ years building quality engineering functions from scratch across AI tooling, AR/fashion, fitness tech, and banking. Built an 8-person QA organisation from zero in 4 months, led teams of up to 10, and increased release cadence from 2/month to as often as 4&ndash;8/month, including daily releases for one product. Combines hands-on test automation (TypeScript, Python, Java, Playwright, Appium) with quality strategy, hiring, incident management, and stakeholder leadership. Currently focused on AI-assisted testing, using coding agents, MCP servers, and BDD frameworks to scale quality as teams grow. ISTQB CTAL-TAE certified.</p>
+</div>
+
+<!-- ==================== CORE COMPETENCIES ==================== -->
+<div class="competencies">
+  <h2>Core competencies</h2>
+  <ul class="leadership-list">
+    <li>Building QA organisations from zero: hiring, staffing, performance reviews</li>
+    <li>Team leadership (2&ndash;10 direct reports), cross-functional stakeholder management</li>
+    <li>Incident management &amp; on-call ownership (P0/P1 triage, root cause analysis)</li>
+    <li>Agile/Scrum, Three Amigos, release management</li>
+  </ul>
 </div>
 
 <!-- ==================== EXPERIENCE ==================== -->
@@ -144,28 +125,20 @@
   <div class="job">
     <h3>Zencoder</h3>
     <div class="dates">May 2025 &ndash; Present &middot; Contract &middot; Porto, Portugal (Remote)</div>
-    <div class="position">Position: QA Team Lead</div>
-    <p>Zencoder builds AI coding agents. Developers started writing code several times faster with these agents, but the rest of the process stayed the same, and QA became the bottleneck. I lead the QA team that solved this by moving from traditional test-after-dev to a model where developers write their own tests with agent assistance.</p>
+    <div class="position">Head of QA</div>
+    <p>Zencoder builds AI coding agents. As developers began shipping code several times faster, downstream testing became the delivery bottleneck. Leading a team of 4 QA engineers and 2 SDETs, reporting to the CTO, to shift QA from post-development gatekeeping to a QA Ops model where developers write their own tests with AI agent assistance.</p>
 
-    <div class="sub-heading">Responsibilities:</div>
     <ul>
-      <li>Lead a centralized QA team (engineers and SDETs) focused on testing infrastructure, quality gates, and developer coaching instead of manual feature gating.</li>
-      <li>Build and maintain BDD test frameworks, predefined prompts, and Agents.md configs that let AI agents generate, debug, and fix tests without human involvement.</li>
-      <li>Rebuilt CI/CD pipelines: parallelized E2E suites with sharding, added incremental stages (sanity, smoke, regression). Currently building AI-driven smart regression that selects only relevant tests per change.</li>
-      <li>Own production incident triage (P0/P1). Root cause analysis feeds back into quality gates to prevent repeat failures.</li>
+      <li>Redesigned the QA operating model, shifting team capacity from manual feature validation toward automation, quality infrastructure and developer enablement.</li>
+      <li>Built BDD test frameworks, reusable prompts and Agents.md configurations that enable AI coding agents to generate and debug tests, meaningfully increasing the first-pass acceptance rate of developer-written tests.</li>
+      <li>Rebuilt CI/CD pipelines with parallelised E2E execution (sharding) and staged sanity/smoke/regression gates, cutting total pipeline runtime from 40&ndash;60 minutes to under 25 minutes (under 15 minutes for E2E).</li>
+      <li>Made stable E2E tests mandatory CI quality gates after reducing flaky-test failures; flaky-test rate is now tracked as an ongoing release-health metric.</li>
+      <li>Own P0/P1 incident triage against a defined SLA (&le;1 P0 per 2 weeks, &le;2 P1 per week); root cause findings feed into quality gates to prevent repeat failures.</li>
+      <li>Introduced AI-assisted defect-to-feature traceability, reviewed monthly with the team to track quality trends by feature area.</li>
+      <li>Enabled IDE plugin release cadence to increase from 2/month to 4&ndash;8/month, and daily releases for the new ZenFlow desktop app, both built under the new QA Ops model.</li>
     </ul>
 
-    <div class="sub-heading">Achievements:</div>
-    <ul>
-      <li>IDE plugin release cadence went from 2/month to 4-8/month after removing QA as the bottleneck.</li>
-      <li>ZenFlow desktop app now ships daily. This product was built entirely under the new QA Ops model.</li>
-      <li>Developer-written tests improved from ~20% passing QA review on first attempt to ~80%, through better tooling and non-blocking code review from the QA side.</li>
-      <li>Flipped QA team allocation from 70% feature testing / 30% infrastructure to 30% developer support / 70% infra and automation. The team now operates as QA Ops engineers.</li>
-      <li>E2E tests became mandatory CI blockers. This required significant flake reduction work first.</li>
-      <li>P0 production bugs decreased while feature output increased. Defects per feature metric keeps going down.</li>
-    </ul>
-
-    <div class="tech">Tech stack: TypeScript, Playwright, BDD/Cucumber, MCP Servers, AI Agents, GitHub Actions, CI/CD, Sharding</div>
+    <div class="tech">Tech stack: TypeScript, Playwright, BDD/Cucumber, Model Context Protocol (MCP) servers, AI Agents, GitHub Actions, CI/CD, Sharding</div>
   </div>
 
   <!-- Zing.Coach -->
@@ -173,20 +146,14 @@
     <h3>Zing Coach</h3>
     <div class="dates">Jul 2024 &ndash; May 2025 &middot; Contract &middot; Remote</div>
     <div class="position">Position: Head of QA</div>
-    <p>Ran QA for a mobile AI fitness app (iOS, Android, web portal, AI recommendation engine, chat). Also handled release management and App Store / Google Play submissions.</p>
+    <p>Head of QA for Zing AI: Home &amp; Gym Workouts, a mobile AI fitness app (iOS, Android, web portal, AI recommendation engine, chat) rated 4.8&#9733; on the App Store (31,000+ ratings) and 4.5&#9733; on Google Play, with 500,000+ Android downloads. Led a team of 6 QA engineers (hired 4), reporting to the CTO and working closely with the CPO and CEO.</p>
 
-    <div class="sub-heading">Responsibilities:</div>
     <ul>
-      <li>Managed third-line support and acted as Release Train Manager, including store submissions and release documentation.</li>
-      <li>Set up and led mobile test automation with Appium, WebdriverIO, and TypeScript.</li>
-    </ul>
-
-    <div class="sub-heading">Achievements:</div>
-    <ul>
-      <li>Brought the team to consistent weekly releases. When I joined, release timing was unpredictable.</li>
-      <li>Built app health monitoring with runbooks, so on-call engineers had clear procedures for incidents.</li>
-      <li>Wrote test strategies for each platform (iOS, Android, web, backend) and ran the iOS automation project from start to finish.</li>
-      <li>Moved the team's focus from bug-finding toward understanding user experience impact.</li>
+      <li>Brought the team from unpredictable release timing to consistent weekly releases, acting as Release Train Manager across App Store and Google Play submissions and release documentation.</li>
+      <li>Set up and led mobile test automation using Appium, WebdriverIO, and TypeScript.</li>
+      <li>Wrote test strategies for iOS, Android, web, and backend, and ran the iOS automation project end-to-end.</li>
+      <li>Built application health monitoring with on-call runbooks, giving engineers clear incident-response procedures.</li>
+      <li>Managed third-line support and used Amplitude and customer-support data to prioritise defects by user impact rather than raw bug count.</li>
     </ul>
 
     <div class="tech">Tech stack: TypeScript, Appium, WebdriverIO, QASE, Jira, GitHub, iOS, Android, Node.js, Amplitude</div>
@@ -197,60 +164,36 @@
     <h3>WANNA (Farfetch Group)</h3>
     <div class="dates">Mar 2022 &ndash; Jun 2024 &middot; Full-time &middot; Porto, Portugal</div>
     <div class="position">Position: Head of QA</div>
-    <p>AR fashion startup doing virtual try-on. Hired and managed a team of 8 QA engineers covering native iOS, mobile web, and backend. Built the QA department from zero.</p>
+    <p>AR fashion startup building virtual try-on technology. Built the QA department from zero to a team of 8 QA engineers (7 hired directly) within 4 months, covering multiple iOS apps, Android, a web SDK, a web app, and backend services. Reported to the CTO.</p>
 
-    <div class="sub-heading">Responsibilities:</div>
     <ul>
-      <li>Owned QA strategy, test management, and resource planning across all platforms.</li>
-      <li>Led mobile testing on native iOS, Android, and mobile web. Backend testing with Python automation.</li>
-      <li>Set up QA within CI/CD. Built a client support process that connected the hardware and software teams, which had been operating separately.</li>
-      <li>Worked across Product Management, Development, and Client Success departments.</li>
+      <li>Owned QA strategy, test management, and resource planning across all platforms; led mobile testing on native iOS and Android with Python-based backend automation.</li>
+      <li>Integrated QA into CI/CD from the ground up, establishing automated quality gates across the full platform portfolio.</li>
+      <li>Built a client support process connecting previously siloed hardware and software teams, working across Product Management, Development, and Client Success.</li>
+      <li>Introduced a 3-level SLA support process, improving customer satisfaction by approximately 80% relative to baseline.</li>
+      <li>Built a monitoring system with hourly reporting on key metrics, reducing mean time to recovery to under 2 hours per incident.</li>
     </ul>
 
-    <div class="sub-heading">Achievements:</div>
-    <ul>
-      <li>QA department went from nonexistent to fully integrated into CI/CD.</li>
-      <li>Introduced a 3-level SLA support process. Customer satisfaction improved by 80%.</li>
-      <li>Built a monitoring system with hourly reports on key metrics. System downtime dropped to under 2 hours.</li>
-    </ul>
-
-    <div class="tech">Tech stack: AWS, Python, Swift, React JS, Jenkins, Allure, Jira</div>
+    <div class="tech">Tech stack: AWS, Python, Swift, React, Jenkins, Allure, Jira</div>
   </div>
 
   <!-- Accenture -->
   <div class="job">
     <h3>Accenture Latvia</h3>
     <div class="dates">Jun 2015 &ndash; Feb 2022 &middot; Full-time &middot; Riga, Latvia</div>
-    <div class="position">Position: Test Automation Lead / Project Manager</div>
-    <p>Nearly 7 years, growing from automation engineer to leading teams of 2-10 across banking, VoD, and Big Data projects. Both hands-on technical work and people management.</p>
+    <div class="position">Position: Test Automation Architect (Senior QA Engineer &rarr; Lead QA &rarr; Test Architect &rarr; Automation Architect)</div>
+    <p>Nearly 7 years, promoted three times from Senior QA Engineer to Test Automation Architect, leading teams of 2&ndash;10 across banking, VoD, and big data projects.</p>
 
-    <div class="sub-heading">Responsibilities:</div>
     <ul>
-      <li>Built test automation frameworks at every level: acceptance, functional, integration, contract, E2E.</li>
-      <li>Ran QA in a "Three Amigos" environment. Handled staffing, performance reviews, and hiring.</li>
-      <li>Held two roles simultaneously: automation lead for a 3-person team and project manager for a 20-person outstaff engagement with an Irish bank.</li>
+      <li>Built test automation frameworks across acceptance, functional, integration, contract, and E2E layers; redesigned automation strategy into a proper test pyramid, improving feedback speed and maintainability.</li>
+      <li>Led hiring, staffing, and performance reviews in a "Three Amigos" QA environment.</li>
+      <li>Built a reusable test framework for frontend and backend, adopted by other Accenture Riga teams.</li>
+      <li>Held dual roles in later years: automation lead for a 3-person team, and project manager for a 20-person staff-augmentation engagement with an Irish bank.</li>
     </ul>
 
-    <div class="sub-heading">Achievements:</div>
-    <ul>
-      <li>Restructured test automation from an inverted cone (mostly acceptance tests at the top) to a proper test pyramid with unit, integration, functional, and acceptance layers.</li>
-      <li>Wrote automation frameworks for Hive/Big Data quality checks.</li>
-      <li>Built a reusable test framework for front and backend that other Accenture Riga teams adopted.</li>
-    </ul>
+    <div class="notable-inline">Notable projects: staff-augmentation engagement with an Irish bank (Java, Jenkins, Allure); VoD backend platform (Java, Cucumber, AWS Lambda); big data analytics for Accenture Video Solutions (Hadoop, Hive, Qlikview).</div>
 
-    <div class="sub-heading">Notable projects:</div>
-    <div class="notable-project">
-      <strong>Outstaff Project Management (Irish Bank):</strong>
-      Staffing, people management, coordination with bank management. (Java, JUnit 5, REST, Jenkins, Allure)
-    </div>
-    <div class="notable-project">
-      <strong>Backend for VoD Service:</strong>
-      Led 8 engineers, built test automation framework, managed releases. (Java, Cucumber, REST, AWS Lambda, Jenkins)
-    </div>
-    <div class="notable-project">
-      <strong>Big Data Analytics (Accenture Video Solutions):</strong>
-      Test strategy and QA for data transaction and analytics system. (Java, Cucumber, Selenium, Hadoop, Hive, Qlikview)
-    </div>
+    <div class="tech">Tech stack: Java, JUnit, Cucumber, Selenium, REST, AWS Lambda, Jenkins, Allure, Hadoop, Hive</div>
   </div>
 
   <!-- Early Career -->
@@ -270,6 +213,33 @@
     </div>
   </div>
 
+</div>
+
+<!-- ==================== SKILLS / TECH STACK ==================== -->
+<div class="skills">
+  <h2>Technologies</h2>
+  <div class="skill-cat"><span class="skill-label">Automation:</span> Playwright, Appium, Selenium, WebdriverIO, Cucumber/BDD, API/contract/integration/E2E testing</div>
+  <div class="skill-cat"><span class="skill-label">Languages:</span> TypeScript, Python, Java</div>
+  <div class="skill-cat"><span class="skill-label">Delivery:</span> GitHub Actions, Jenkins, CI/CD quality gates, test sharding, release management</div>
+  <div class="skill-cat"><span class="skill-label">Cloud &amp; observability:</span> AWS, Allure, application health monitoring, incident management</div>
+  <div class="skill-cat"><span class="skill-label">AI-assisted quality:</span> AI coding agents, MCP (Model Context Protocol), agent-generated tests, prompt/agent configuration</div>
+</div>
+
+<!-- ==================== EDUCATION / CERTIFICATION / LANGUAGES ==================== -->
+<div class="footer-info">
+  <h2>Education &amp; certification</h2>
+
+  <div class="label">Education</div>
+  <ul class="edu-list">
+    <li>Russian State Technological University &ndash; BSc Computer Science (2007&ndash;2011)</li>
+    <li>Russian State Technological University &ndash; MSc Computer Science (2011&ndash;2013)</li>
+  </ul>
+
+  <div class="label">Certification</div>
+  <div class="tech-inline">ISTQB&reg; Certified Tester Advanced Level &ndash; Test Automation Engineering</div>
+
+  <div class="label">Languages</div>
+  <div class="tech-inline">English &ndash; fluent, Russian &ndash; fluent, Portuguese &ndash; basic, Latvian &ndash; basic</div>
 </div>
 
 </body>

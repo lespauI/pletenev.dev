@@ -134,3 +134,17 @@ node_modules/
 # macOS
 .DS_Store
 **/.DS_Store
+**/.~lock.*#
+
+# private CV-builder workspace (tailored job-application CVs, not for publishing)
+files/build-cv.js
+files/render_cv_pdf.py
+files/cv-data.json
+files/cv-template.html
+files/cv-*.html
+files/cv-*.pdf
+!files/cv.html
+files/applications/
+files/job-applications/
+files/career-plan-ai-quality.md
+files/evals-curriculum.md
